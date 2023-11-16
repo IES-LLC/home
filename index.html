@@ -18,7 +18,7 @@
             width: 50%; /* Adjust this value to control the size */
             height: auto;
             transform: translate(-50%, -50%);
-            z-index: -1;
+            z-index: 1;
         }
 
         nav {
@@ -26,7 +26,7 @@
             top: 20px;
             left: 20px;
             color: #fff;
-            z-index: 1;
+            z-index: 2;
         }
 
         nav ul {
@@ -112,18 +112,20 @@
         /* Add styling for the iframe container */
         .iframe-container {
             position: absolute;
-            top: 10%;
-            left: 10%;
-            width: 80%;
-            height: 80%;
-        }
-
-        iframe {
+            top: 15%;
+            left: 15%;
+            width: 70%;
+            height: 70%;
+            border: 2px solid #fff;
+            z-index: 0; /* New z-index value */
+          }
+        
+          iframe {
             width: 100%;
             height: 100%;
             border: none;
-        }
-    </style>
+          }
+        </style>
 </head>
 <body>
 
