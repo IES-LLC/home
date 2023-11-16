@@ -131,7 +131,6 @@
 
     <img id="image-background" src="IES Icon.jpg" alt="Background Image">
 
-
     <nav>
         <ul>
             <li><a href="#">HOME</a></li>
@@ -144,7 +143,7 @@
             </li>
             <li><a href="#">SHOP</a>
                 <ul>
-                    <li><a href="#">Tong Dies</a></li>
+                    <li><a href="#" onclick="loadIframeContent('tong_dies.html')">Tong Dies</a></li>
                     <li><a href="#">Hydraulic Hose's</a></li>
                     <li><a href="#">Elastomers</a></li>
                     <li><a href="#">Machined Components</a></li>
@@ -202,9 +201,16 @@
     
     <!-- Add an iframe container -->
     <div class="iframe-container">
-        <!-- Use an iframe to embed the tong_dies.html content -->
-        <iframe src="tong_dies.html" title="Tong Dies"></iframe>
+        <!-- Use an iframe to embed the content -->
+        <iframe id="content-iframe" title="Content"></iframe>
     </div>
+
+    <script>
+        function loadIframeContent(contentUrl) {
+            // Set the source of the iframe to the specified URL
+            document.getElementById('content-iframe').src = contentUrl;
+        }
+    </script>
 
 </body>
 </html>
