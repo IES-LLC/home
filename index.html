@@ -11,17 +11,24 @@
             font-family: Arial, sans-serif;
         }
 
-        #image-background {
+        #video-background {
             position: fixed;
             top: 50%;
             left: 50%;
-            width: 50%;
-            height: auto;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
             transform: translate(-50%, -50%);
             z-index: 1;
         }
 
         nav {
+            position: fixed;
+            top: 20px;
+            left: 20px;
+            color: #fff;
+            z-index: 2;
+        }
             position: fixed;
             top: 20px;
             left: 20px;
@@ -129,7 +136,10 @@
 </head>
 <body>
 
-    <img id="image-background" src="IES Icon.jpg" alt="Background Image">
+    <video id="video-background" autoplay loop muted>
+        <source src="Grind.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+    </video>
 
     <nav>
         <ul>
